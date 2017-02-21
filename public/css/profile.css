@@ -43,9 +43,10 @@ ul.tab li a:focus, .active {background-color: lightblue;}
 }
 
 .user {
-  vertical-align: top;
+  vertical-align: baseline;
   display: inline-block;;
   text-align: center;
+
 }
 
 .user img {

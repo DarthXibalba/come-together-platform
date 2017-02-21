@@ -18,16 +18,14 @@
   <!-- load header -->
   <div id="header"></div>
 
+  <!-- link to edit user's settings -->
   <a href="/settings"><p align = "right">Edit Profile&Settings</p></a>
 
-  <!-- *** ADD CODE HERE *** -->
+  <!-- User's profile picture/name -->  
   <div class= "user">
     <img src="/images/cat_profile_picture.jpg">
     <h1 class="username">Joe Smith</h1>    
   </div>
-
-
-  <!-- *** ADD CODE HERE *** -->
 
   <!-- Toggles between user's about/projects -->
   <div class="container">
@@ -38,13 +36,63 @@
     </ul>
   </div>
 
+  <!-- user's about me page -->
   <div id="UserAbout" class="tabcontent">
-    <p>About info ect.</p>
-    
+    <h4>Biography</h4>
+    <p>Cat lover, expert in gardening, and all around community service enthusiast.</p>
+    <h4>Location</h4>
+    <p>La Jolla, CA.</p>
+    <h4>Websites</h4>
+    <a href="https://www.facebook.com"><p>facebook.com/joesmith</p></a>
+
   </div>
 
+  <!-- user's current/past projects -->
   <div id="UserProjects" class="tabcontent">
-    <p>List of projects</p>
+
+    <h4>Current Projects</h4>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7" align="right">
+          <img src="/images/trending_refugee.jpg" class="img-responsive img-rounded">       
+        </div>
+        <div class="col-xs-5">
+          <h4><a href="/project/highlights/4" class="projectName">Tutoring Refugee Children</a></h4>
+          <p class="projectShortDesc">Helping refugee children to integrate into the community better through help with language.</p>
+        </div>
+      </div>
+      <p style="margin-bottom:40px;"/></p>
+    </div>
+
+    <h4>Past Projects</h4>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7" align="right">
+          <img src="/images/highlights_japaneseGarden.jpg" class="img-responsive img-rounded">       
+        </div>
+        <div class="col-xs-5">
+          <h4><a href="/project/highlights/1" class="projectName">Zensation</a></h4>
+          <p class="projectShortDesc">Providing serenity and peace of mind in a backyard garden.</p>
+        </div>
+      </div>
+      <p style="margin-bottom:40px;"/></p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7" align="right">
+          <img src="/images/highlights_petWatch.jpg" class="img-responsive img-rounded">       
+        </div>
+        <div class="col-xs-5">
+          <h4><a href="/project/highlights/2" class="projectName">Lost Pet Watch</a></h4>
+          <p class="projectShortDesc">Neighbors looking for your lost pet before you even ask.</p>
+        </div>
+      </div>
+      <p style="margin-bottom:40px;"/></p>
+    </div>
+
   </div>  
 
 
@@ -56,6 +104,7 @@
   <script src="/js/jquery-3.1.1.js"></script>
   <script src="/js/bootstrap.js"></script>
   <script src="/js/comeTogether.js"></script>
+  <script> document.getElementById("defaultOpen").click();</script>
   <!-- load header and footer using scripts-->
   <script> $(function() {$("#header").load("/header.html")} ); </script>
   <script> $(function() {$("#footer").load("/footer.html")} ); </script>
