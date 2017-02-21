@@ -18,12 +18,34 @@
   <!-- load header -->
   <div id="header"></div>
 
+  <a href="/settings"><p align = "right">Edit Profile&Settings</p></a>
+
+  <!-- *** ADD CODE HERE *** -->
+  <div class= "user">
+    <img src="/images/cat_profile_picture.jpg">
+    <h1 class="username">Joe Smith</h1>    
+  </div>
 
 
   <!-- *** ADD CODE HERE *** -->
-  <h1>Profile</h1>
 
-  <!-- *** ADD CODE HERE *** -->
+  <!-- Toggles between user's about/projects -->
+  <div class="container">
+    <!-- Allow you to toggle between different content on the home screen -->
+    <ul class="tab">
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserAbout')" id = "defaultOpen">About</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserProjects')">Projects</a></li>
+    </ul>
+  </div>
+
+  <div id="UserAbout" class="tabcontent">
+    <p>About info ect.</p>
+    
+  </div>
+
+  <div id="UserProjects" class="tabcontent">
+    <p>List of projects</p>
+  </div>  
 
 
 
