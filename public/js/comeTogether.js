@@ -20,7 +20,7 @@ function initializePage() {
 }
 
 
-function openCity(evt, cityName) {
+function switchTabContent(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -39,6 +39,22 @@ function openCity(evt, cityName) {
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
-	
-
 }
+
+
+/* TAB JQUERY CALLS */
+$("#Tab_PastProject").click(function() {
+    switchTabContent(event, 'PastProject');
+});
+
+$("#Tab_Trending").click(function() {
+    switchTabContent(event, 'Trending');
+});
+
+$("#Tab_UserAbout").click(function() {
+    switchTabContent(event, 'UserAbout');
+});
+
+$("#Tab_UserProjects").click(function() {
+    switchTabContent(event, 'UserProjects');
+});

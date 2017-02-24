@@ -18,9 +18,6 @@
   <!-- load header -->
   <div id="header"></div>
 
-  <!-- link to edit user's settings -->
-  <a href="/settings"><p align = "right">Edit Profile&Settings</p></a>
-
   <!-- User's profile picture/name -->  
   <div class= "user">
     <img src="/images/cat_profile_picture.jpg" class = "center-block">
@@ -31,8 +28,8 @@
   <div class="container">
     <!-- Allow you to toggle between different content on the home screen -->
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserAbout')" id = "defaultOpen">About</a></li>
-        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserProjects')">Projects</a></li>
+        <li><a class="tablinks" id="Tab_UserAbout">About</a></li>
+        <li><a class="tablinks" id="Tab_UserProjects">Projects</a></li>
     </ul>
   </div>
 
@@ -44,7 +41,6 @@
     <p>La Jolla, CA.</p>
     <h4>Websites</h4>
     <a href="https://www.facebook.com"><p>facebook.com/joesmith</p></a>
-
   </div>
 
   <!-- ***user's current/past projects *** -->
@@ -97,7 +93,7 @@
   <script src="/js/jquery-3.1.1.js"></script>
   <script src="/js/bootstrap.js"></script>
   <script src="/js/comeTogether.js"></script>
-  <script> document.getElementById("defaultOpen").click();</script>
+  <script> document.getElementById("Tab_UserAbout").click();</script>
   <!-- load header and footer using scripts-->
   <script> $(function() {$("#header").load("/header.html")} ); </script>
   <script> $(function() {$("#footer").load("/footer.html")} ); </script>
