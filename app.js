@@ -15,6 +15,8 @@ var create = require('./routes/create');
 var profile = require('./routes/profile');
 var settings = require('./routes/settings');
 var staticpages = require('./routes/staticpages');
+var confirmation = require('./routes/confirmation');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -53,6 +55,7 @@ app.get('/settings', settings.view);
 app.get('/aboutus', staticpages.viewAboutUs);
 app.get('/faq', staticpages.viewFAQ);
 app.get('/contact', staticpages.viewContact);
+app.get('/confirmation', confirmation.viewConfirmation);
 
 // Example route
 // app.get('/users', user.list);

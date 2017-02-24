@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Project Page -->
+<html>
+<head>
+	<title>Come Together</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- import custom CSS modules -->
+  <link href="/css/comeTogether.css" rel="stylesheet">
+  <link href="/css/textFonts.css" rel="stylesheet">
+  <link href="/css/discover.css" rel="stylesheet">
+  <link href="/css/confirmation.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="header"></div>
+	<!-- load header -->
+	<h2>Congratulations!</h2>
+	<p><br /><br /><br />You have signed up for this project!<br />
+	<br />
+	<br />
+		<div id="btn-done">
+			<a href="/home">
+      		<input id="done" type="button" value="Done!">
+      		</a>
+    	</div>
+	</p>
+
+	<!-- load footer -->
+	<div id="footer"></div>
+
+	<!-- load JS scripts -->
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/comeTogether.js"></script>
+	<!-- load header and footer using scripts-->
+	<script> $(function() {$("#header").load("/header.html")} ); </script>
+	<script> $(function() {$("#footer").load("/footer.html")} ); </script>
+</body>
+</html>
