@@ -9,5 +9,5 @@ var projectData = require('../projectData.json');
 
 exports.view = function(req, res) {
 	console.log("Exporting Profile");
-	res.render('profile');
+	res.render('profile',projectData);
 };
