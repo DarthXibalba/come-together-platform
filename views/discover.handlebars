@@ -26,27 +26,19 @@
 
       <div id="map" style="width:100%;height:500px"></div>
 
-      <h4 style="margin-top: 20px">Projects</h4>
-      <div id="project1"> 
-        <a class="thumbnail">
-          <p>School Playground Project</p>
-        </a>
-      </div>
-      <div id="project2">
-        <a class="thumbnail">
-          <p>Homes for the Homeless</p>
-        </a>
-      </div>
-      <div id="project3">
-        <a class="thumbnail">
-          <p>Support the Local Animal Shelter</p>
-        </a>
-      </div>
-      <div id="project4">
-        <a class="thumbnail">
-          <p>Community Garden Project</p>
-        </a>
-      </div>
+      <h4 style="margin-top: 20px">Past Highlights</h4>
+      {{#each highlightProjects}}
+        <div>
+          <a class="thumbnail"><p>{{name}}</p></a>
+        </div>
+      {{/each}}
+
+      <h4 style="margin-top: 20px">Trending Now</h4>
+      {{#each trendingProjects}}
+        <div>
+          <a class="thumbnail"><p>{{name}}</p></a>
+        </div>
+      {{/each}}
 
     </div>
 
@@ -171,9 +163,9 @@
   <!-- load header and footer using scripts-->
   <script> $(function() {$("#header").load("/header.html")} ); </script>
   <script> $(function() {$("#footer").load("/footer.html")} ); </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVRC24AQ-lrsvtsXe4OFs0WwrSYY6Di8&callback=initMap">
-    </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVRC24AQ-lrsvtsXe4OFs0WwrSYY6Di8&callback=initMap">
+  </script>
 
   </body>
 </html>

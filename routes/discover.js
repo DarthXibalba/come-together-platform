@@ -9,5 +9,5 @@ var projectData = require('../projectData.json');
 
 exports.view = function(req, res) {
 	console.log("Discovering projects");
-	res.render('discover');
+	res.render('discover', projectData);
 };
