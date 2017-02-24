@@ -18,12 +18,75 @@
   <!-- load header -->
   <div id="header"></div>
 
+  <!-- link to edit user's settings -->
+  <a href="/settings"><p align = "right">Edit Profile&Settings</p></a>
+
+  <!-- User's profile picture/name -->  
+  <div class= "user">
+    <img src="/images/cat_profile_picture.jpg" class = "center-block">
+    <h1 class="username">Joe Smith</h1>    
+  </div>
+
+  <!-- Toggles between user's about/projects -->
+  <div class="container">
+    <!-- Allow you to toggle between different content on the home screen -->
+    <ul class="tab">
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserAbout')" id = "defaultOpen">About</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'UserProjects')">Projects</a></li>
+    </ul>
+  </div>
+
+  <!-- user's about me page -->
+  <div id="UserAbout" class="tabcontent">
+    <h4>Biography</h4>
+    <p>Cat lover, expert in gardening, and all around community service enthusiast.</p>
+    <h4>Location</h4>
+    <p>La Jolla, CA.</p>
+    <h4>Websites</h4>
+    <a href="https://www.facebook.com"><p>facebook.com/joesmith</p></a>
+
+  </div>
+
+  <!-- ***user's current/past projects *** -->
+
+  <!-- Need some variable in data.json that show/hide projects that the user has joined. Currently shows all highlights and past projects of the data file.-->
+  <div id="UserProjects" class="tabcontent">
+
+  <h4>Current Projects</h4>
+  {{#each trendingProjects}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-7" align="right">
+        <img src="{{imageURL}}" class="img-responsive img-rounded">       
+      </div>
+      <div class="col-xs-5">
+        <h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
+        <p class="projectShortDesc">{{shortDescription}}</p>
+      </div>
+    </div>
+    <p style="margin-bottom:40px;"/></p>
+  </div>
+  {{/each}}
 
 
-  <!-- *** ADD CODE HERE *** -->
-  <h1>Profile</h1>
+  <h4>Past Projects</h4>
+  {{#each highlightProjects}}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7" align="right">
+          <img src="{{imageURL}}" class="img-responsive img-rounded">       
+        </div>
+        <div class="col-xs-5">
+          <h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
+          <p class="projectShortDesc">{{shortDescription}}</p>
+        </div>
+      </div>
+      <p style="margin-bottom:40px;"/></p>
+    </div>
+  {{/each}}
 
-  <!-- *** ADD CODE HERE *** -->
+
+  </div>  
 
 
 
@@ -34,6 +97,7 @@
   <script src="/js/jquery-3.1.1.js"></script>
   <script src="/js/bootstrap.js"></script>
   <script src="/js/comeTogether.js"></script>
+  <script> document.getElementById("defaultOpen").click();</script>
   <!-- load header and footer using scripts-->
   <script> $(function() {$("#header").load("/header.html")} ); </script>
   <script> $(function() {$("#footer").load("/footer.html")} ); </script>
