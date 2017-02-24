@@ -14,6 +14,13 @@ exports.addProject = function(req, res) {
 
   projectData.newProjects.push(newProject);
 
-  res.render('project',projectData);
+  res.render('project', {
+    'projectName': newProject['name'],
+    'projectImgUrl': newProject['imageURL'],
+    'projectShortDesc': newProject['shortDiscription'],
+    'projectDesc': newProject['description']
+  });
+
+  //project.viewNewProject(newProject);
 
 }

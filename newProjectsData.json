@@ -1,10 +1,11 @@
 {
-  "newProjects": [
-    {
-      "name": "Geometry Playground",
-      "imageURL": "/images/highlights_parkPlayground.jpg",
-      "shortDescription": "Combining math and playtime to help kids learn more about math.",
-      "description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly."
-    }
-  ]
+	"newProjects": [
+		{
+			"id": "0",
+			"name": "TEST - Geometry Playground",
+			"imageURL": "/images/highlights_parkPlayground.jpg",
+			"shortDescription": "Combining math and playtime to help kids learn more about math.",
+			"description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly."
+		}
+	]
 }

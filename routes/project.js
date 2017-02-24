@@ -49,14 +49,18 @@ exports.viewTrending = function(req, res) {
 
 exports.viewNewProject = function(req, res) {
 	console.log("Rendering newProject");
-	/* This gets passed in through req from caller */
-	var projID = req.params.id; 
 
 	/* Find and return the correct object */
-	var name = newProject['newProjects'][projID]['name'];
-	var imageURL = newProject['newProjects'][projID]['imageURL'];
-	var shortDesc = newProject['newProjects'][projID]['shortDescription'];
-	var desc = newProject['newProjects'][projID]['description'];
+	var name = newProject['newProj'][0]['name'];
+	var imageURL = newProject['newProj'][0]['imageURL'];
+	var shortDesc = newProject['newProj'][0]['shortDescription'];
+	var desc = newProject['newProj'][0]['description'];
+
+	console.log("Read new project data!");
+	console.log(name);
+	console.log(imageURL);
+	console.log(shortDesc);
+	console.log(desc);
 
 	res.render('project', {
 		'projectName': name,
