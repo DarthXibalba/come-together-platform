@@ -7,6 +7,7 @@
 // Get all of our project data
 console.log("Loading Project.js");
 var projectData = require('../projectData.json');
+var newProject = require('../newProjectsData.json');
 
 exports.viewHighlights = function(req, res) {
 	console.log("Rendering Highlights");
@@ -37,6 +38,25 @@ exports.viewTrending = function(req, res) {
 	var imageURL = projectData['trendingProjects'][projID]['imageURL'];
 	var shortDesc = projectData['trendingProjects'][projID]['shortDescription'];
 	var desc = projectData['trendingProjects'][projID]['description'];
+
+	res.render('project', {
+		'projectName': name,
+		'projectImgUrl': imageURL,
+		'projectShortDesc': shortDesc,
+		'projectDesc': desc
+	});
+};
+
+exports.viewNewProject = function(req, res) {
+	console.log("Rendering newProject");
+	/* This gets passed in through req from caller */
+	var projID = req.params.id; 
+
+	/* Find and return the correct object */
+	var name = newProject['newProjects'][projID]['name'];
+	var imageURL = newProject['newProjects'][projID]['imageURL'];
+	var shortDesc = newProject['newProjects'][projID]['shortDescription'];
+	var desc = newProject['newProjects'][projID]['description'];
 
 	res.render('project', {
 		'projectName': name,
