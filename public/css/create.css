@@ -1,3 +1,32 @@
 /* 
  * CSS module used for the changing Create A Project page format. 
  */
+#submitBtn {
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+  background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+  background-repeat: repeat-x;
+  border-color: transparent;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: white;
+  width: 100px;
+}
+
+#submitBtn:hover,
+#submitBtn:focus {
+  background-color: #419641;
+  background-position: 10 -15px;
+
+}
+
+#submitBtn:active,
+#submitBtn.active {
+  background-color: #419641;
+  border-color: #3e8f3e;
+}
+#submitBtn:active,
+#submitBtn.active {
+  background-color: #419641;
+  border-color: #3e8f3e;
+}
