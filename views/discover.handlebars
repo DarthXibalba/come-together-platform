@@ -16,106 +16,108 @@
   <body>
     <div id="header"></div>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Discover Local Projects</h1>
+    <div class="container">
+
+      <h2 style="margin-bottom: 30px">Discover Local Projects</h2>
+      <div id="floating-panel">
+        <input id="address" type="textbox" value="92092">
+        <input id="submit" type="button" value="Find">
+      </div>
+
+      <div id="map" style="width:100%;height:500px"></div>
+
+      <h4 style="margin-top: 20px">Projects</h4>
+      <div id="project1"> 
+        <a class="thumbnail">
+          <p>School Playground Project</p>
+        </a>
+      </div>
+      <div id="project2">
+        <a class="thumbnail">
+          <p>Homes for the Homeless</p>
+        </a>
+      </div>
+      <div id="project3">
+        <a class="thumbnail">
+          <p>Support the Local Animal Shelter</p>
+        </a>
+      </div>
+      <div id="project4">
+        <a class="thumbnail">
+          <p>Community Garden Project</p>
+        </a>
+      </div>
+
     </div>
-    <div id="floating-panel">
-      <input id="address" type="textbox" value="92092">
-      <input id="submit" type="button" value="Find">
-    </div>
-    <div id="map" style="width:100%;height:500px"></div>
-    <h4>Projects</h4>
-    <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-    <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-    <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-    <div class="project" id="project1"> 
-      <a class="thumbnail">
-        <p>School Playground Project</p>
-      </a>
-    </div>
-    <div class="project"  id="project2">
-      <a class="thumbnail">
-        <p>Homes for the Homeless</p>
-      </a>
-    </div>
-    <div class="project" id="project3">
-      <a class="thumbnail">
-        <p>Support the Local Animal Shelter</p>
-      </a>
-    </div>
-    <div class="project" id="project4">
-      <a class="thumbnail">
-        <p>Community Garden Project</p>
-      </a>
-    </div>
-  </div>
+
+    <!-- Load GMap -->
     <script>
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
           center: {lat: 32.88, lng: -117.24}
         });
+
         var myCenter = new google.maps.LatLng(32.88,-117.24);
         var marker = new google.maps.Marker({position:myCenter});
         var myLatlng2 = new google.maps.LatLng(32.899696,-117.225666);
-        var marker2 = new google.maps.Marker({
-          position: myLatlng2,
-        });
-          var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">School Playground Project</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>School Playground Project</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-            'sandstone rock formation in the southern part of the '+
-            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-            'south west of the nearest large town, Alice Springs; 450&#160;km '+
-            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-            'Aboriginal people of the area. It has many springs, waterholes, '+
-            'rock caves and ancient paintings. Uluru is listed as a World '+
-            'Heritage Site.</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
-            '</div>'+
-            '</div>';
+        var marker2 = new google.maps.Marker({position:myLatlng2});
+
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">School Playground Project</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>School Playground Project</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+          'sandstone rock formation in the southern part of the '+
+          'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+          'south west of the nearest large town, Alice Springs; 450&#160;km '+
+          '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+          'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+          'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+          'Aboriginal people of the area. It has many springs, waterholes, '+
+          'rock caves and ancient paintings. Uluru is listed as a World '+
+          'Heritage Site.</p>'+
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+          'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+          '(last visited June 22, 2009).</p>'+
+          '</div>'+
+          '</div>';
           var infowindow = new google.maps.InfoWindow({
             content: contentString
           });
-          marker2.addListener('click', function() {
-            infowindow.open(map, marker2);
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
           });
-          var contentString2 = '<div id="content2">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Homes for the Homeless</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>This community project will result in a house for a homeless family to live in. ' +
-            'sandstone rock formation in the southern part of the '+
-            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-            'south west of the nearest large town, Alice Springs; 450&#160;km '+
-            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-            'Aboriginal people of the area. It has many springs, waterholes, '+
-            'rock caves and ancient paintings. Uluru is listed as a World '+
-            'Heritage Site.</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
-            '</div>'+
-            '</div>';
+
+        var contentString2 = '<div id="content2">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Homes for the Homeless</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>This community project will result in a house for a homeless family to live in. ' +
+          'sandstone rock formation in the southern part of the '+
+          'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+          'south west of the nearest large town, Alice Springs; 450&#160;km '+
+          '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+          'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+          'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+          'Aboriginal people of the area. It has many springs, waterholes, '+
+          'rock caves and ancient paintings. Uluru is listed as a World '+
+          'Heritage Site.</p>'+
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+          'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+          '(last visited June 22, 2009).</p>'+
+          '</div>'+
+          '</div>';
           var infowindow2 = new google.maps.InfoWindow({
             content: contentString2
           });
-          marker.addListener('click', function() {
-            infowindow2.open(map, marker);
+          marker2.addListener('click', function() {
+            infowindow2.open(map, marker2);
           });
-        var geocoder = new google.maps.Geocoder();
 
+        var geocoder = new google.maps.Geocoder();
         document.getElementById('submit').addEventListener('click', function() {
           geocodeAddress(geocoder, map);
         });
@@ -128,6 +130,7 @@
           fillColor: "#0000FF",
           fillOpacity: 0.2,
         });
+
         MyLocationCircle.setMap(map);
         marker.setMap(map);
         marker2.setMap(map);
