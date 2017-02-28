@@ -25,12 +25,14 @@
 			<p class="projectDesc">{{projectDesc}}</p>
 			<hr>
 		</div>
-		<div id="btn-join">
-			<a href="/confirmation">
-      		<input id="submit" type="button" value="Join Project!">
-      		</a>
-    	</div>
 
+		{{#if showJoinBtn}}
+			<div id="btn-join">
+				<a href="/confirmation">
+	      		<input id="submit" type="button" value="Join Project!">
+	      		</a>
+	    	</div>
+    	{{/if}}
 		<div id="btn-back"> <a href="/home">&laquo; Back</a></div>
 	</div>
 

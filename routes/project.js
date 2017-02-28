@@ -19,12 +19,22 @@ exports.viewHighlights = function(req, res) {
 	var imageURL = projectData['highlightProjects'][projID]['imageURL'];
 	var shortDesc = projectData['highlightProjects'][projID]['shortDescription'];
 	var desc = projectData['highlightProjects'][projID]['description'];
+	var status = projectData['highlightProjects'][projID]['status'];
+	
+	console.log("Status:", status);
+	if (status === "active") {
+		showJoin = true;
+	}
+	else {
+		showJoin = false;
+	}
 
 	res.render('project', {
 		'projectName': name,
 		'projectImgUrl': imageURL,
 		'projectShortDesc': shortDesc,
-		'projectDesc': desc
+		'projectDesc': desc,
+		'showJoinBtn': showJoin
 	});
 };
 
@@ -38,12 +48,23 @@ exports.viewTrending = function(req, res) {
 	var imageURL = projectData['trendingProjects'][projID]['imageURL'];
 	var shortDesc = projectData['trendingProjects'][projID]['shortDescription'];
 	var desc = projectData['trendingProjects'][projID]['description'];
+	var status = projectData['trendingProjects'][projID]['status'];
+	
+	console.log("Status:", status);
+	if (status === "active") {
+		showJoin = true;
+	}
+	else {
+		showJoin = false;
+	}
+
 
 	res.render('project', {
 		'projectName': name,
 		'projectImgUrl': imageURL,
 		'projectShortDesc': shortDesc,
-		'projectDesc': desc
+		'projectDesc': desc,
+		'showJoinBtn': showJoin
 	});
 };
 
@@ -55,6 +76,7 @@ exports.viewNewProject = function(req, res) {
 	var imageURL = newProject['newProj'][0]['imageURL'];
 	var shortDesc = newProject['newProj'][0]['shortDescription'];
 	var desc = newProject['newProj'][0]['description'];
+	var status = projectData['trendingProjects'][projID]['status'];
 
 	console.log("Read new project data!");
 	console.log(name);
@@ -62,10 +84,19 @@ exports.viewNewProject = function(req, res) {
 	console.log(shortDesc);
 	console.log(desc);
 
+	console.log("Status:", status);
+	if (status === "active") {
+		showJoin = true;
+	}
+	else {
+		showJoin = false;
+	}
+
 	res.render('project', {
 		'projectName': name,
 		'projectImgUrl': imageURL,
 		'projectShortDesc': shortDesc,
-		'projectDesc': desc
+		'projectDesc': desc,
+		'showJoinBtn': showJoin
 	});
 };
