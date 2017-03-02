@@ -5,7 +5,29 @@
 			"name": "TEST - Geometry Playground",
 			"imageURL": "/images/highlights_parkPlayground.jpg",
 			"shortDescription": "Combining math and playtime to help kids learn more about math.",
-			"description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly."
-		}
-	]
+			"description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly.",
+		  "status" : "active"
+    }
+	],
+
+  "oldProjects": [
+    {
+      "id": "1",
+      "name": "Pothole Repair Service",
+      "imageURL": "/images/trending_fixPotholes.jpg",
+      "shortDescription": "Fixing up potholes in local streets.",
+      "description": "Like most people in my area, I love my hometown. It's the city I grew up in and where I created cherishable memories with friends and family. What saddened me over the years was seeing it degrade in quality, especially the local roads. When my car hit what was probably the one-thousandth pothole that week, I said that enough is enough; someone needs to fix up our roads. Join me in creating a company that is geared towards taking care of these pesky roadside obstacles.",
+      "status" : "active"
+    },
+
+    {
+      "id": "4",
+      "name": "Tutoring Refugee Children",
+      "imageURL": "/images/trending_refugee.jpg",
+      "shortDescription": "Helping refugee children to integrate into the community better through help with language.",
+      "description": "With the ongoing refugee crisis, more and more children are dropped into an unsympathetic school system that does not care about their needs. While these children are in danger of falling behind if they cannot catch up with the curriculum, there is a way to prevent them from failing. Please consider joining a local team of community members as we help these students improve upon their language and mathematical skills so that they can stride toward a brighter future.",
+      "status": "active"
+    }
+  ]
+
 }

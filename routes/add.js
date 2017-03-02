@@ -4,15 +4,18 @@ var projectData = require('../newProjectsData.json');
 exports.addProject = function(req, res) { 
     
   var newProject = {
-      "id": 0,
+      "id": (projectData.newProjects.length),
       "name": req.query.name,
       "imageURL": req.query.imageurl,
-      "shortDiscription": req.query.summary,
-      "description": req.query.description,    
+      "shortDescription": req.query.summary,
+      "description": req.query.description,
+      "status": "active",    
     };
   console.log(newProject);
 
-  projectData.newProjects.push(newProject);
+  projectData['newProjects'].push(newProject);
+
+  console.log(projectData);
 
   res.render('project', {
     'projectName': newProject['name'],

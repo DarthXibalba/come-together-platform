@@ -49,14 +49,14 @@
   <div id="UserProjects" class="tabcontent">
 
   <h4>Current Projects</h4>
-  {{#each trendingProjects}}
+  {{#each newProjects}}
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-7" align="right">
         <img src="{{imageURL}}" class="img-responsive img-rounded">       
       </div>
       <div class="col-xs-5">
-        <h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
+        <h4><a href="/project/create/{{id}}" class="projectName">{{name}}</a></h4>
         <p class="projectShortDesc">{{shortDescription}}</p>
       </div>
     </div>
@@ -66,14 +66,14 @@
 
 
   <h4>Past Projects</h4>
-  {{#each highlightProjects}}
+  {{#each oldProjects}}
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-7" align="right">
           <img src="{{imageURL}}" class="img-responsive img-rounded">       
         </div>
         <div class="col-xs-5">
-          <h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
+          <h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
           <p class="projectShortDesc">{{shortDescription}}</p>
         </div>
       </div>
