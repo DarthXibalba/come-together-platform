@@ -9,7 +9,7 @@ var map;
 var geocoder;
 
 /* Initialize GMaps in Discover */
-function initMap() {
+function initMap(event) {
 	map = new google.maps.Map(document.getElementById('map'), {
 	  zoom: 11,
 	  center: {lat: 32.88, lng: -117.24}
