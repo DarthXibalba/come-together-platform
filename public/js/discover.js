@@ -1,9 +1,16 @@
 /* 
  * Client-side JS module for discover.
  */
+ 
+console.log("Loaded Discover jQuery!");
 
+/* Define Global Variables */
+var map;
+var geocoder;
+
+/* Initialize GMaps in Discover */
 function initMap() {
-	var map = new google.maps.Map(document.getElementById('map'), {
+	map = new google.maps.Map(document.getElementById('map'), {
 	  zoom: 11,
 	  center: {lat: 32.88, lng: -117.24}
 	});
@@ -45,10 +52,6 @@ function initMap() {
 	    infowindow2.open(map, marker2);
 	  });
 
-	var geocoder = new google.maps.Geocoder();
-	document.getElementById('submit').addEventListener('click', function() {
-	  geocodeAddress(geocoder, map);
-	});
 	var MyLocationCircle = new google.maps.Circle({
 	  center: myCenter,
 	  radius: 15000,
@@ -62,29 +65,37 @@ function initMap() {
 	MyLocationCircle.setMap(map);
 	marker.setMap(map);
 	marker2.setMap(map);
+
+	geocoder = new google.maps.Geocoder();
 }
 
-function geocodeAddress(geocoder, resultsMap) {
+function geocodeAddress(event, geocoder, resultsMap) {
 	var address = document.getElementById('address').value;
 	geocoder.geocode({'address': address}, function(results, status) {
-	  if (status === 'OK') {
-	    resultsMap.setCenter(results[0].geometry.location);
-	    console.log("hello" + results[0].geometry.location);
-	    var locationA = results[0].geometry.location;
-	    var marker = new google.maps.Circle({
-	      center: locationA,
-	      radius: 15000,
-	      strokeColor: "#0000FF",
-	      strokeOpacity: 0.8,
-	      strokeWeight: 2,
-	      fillColor: "#0000FF",
-	      fillOpacity: 0.2,
-	      map: resultsMap,
-	      position: results[0].geometry.location
-	    });
-	    console.log("this is location A " + locationA);
-	  } else {
-	    alert('Geocode was not successful for the following reason: ' + status);
-	  }
+		if (status === 'OK') {
+		resultsMap.setCenter(results[0].geometry.location);
+		console.log("hello" + results[0].geometry.location);
+		var locationA = results[0].geometry.location;
+		var marker = new google.maps.Circle({
+		  center: locationA,
+		  radius: 15000,
+		  strokeColor: "#0000FF",
+		  strokeOpacity: 0.8,
+		  strokeWeight: 2,
+		  fillColor: "#0000FF",
+		  fillOpacity: 0.2,
+		  map: resultsMap,
+		  position: results[0].geometry.location
+		});
+		console.log("this is location A " + locationA);
+		} else {
+		alert('Geocode was not successful for the following reason: ' + status);
+		}
 	});
 }
+
+
+$("#submit").click(function() {
+	console.log("Clicked Submit!");
+	geocodeAddress(event, geocoder, map);
+});
