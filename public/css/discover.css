@@ -5,9 +5,12 @@
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
+  height: 200px;
+  width: 90%;
+  /*
   height: 100%;
   width: 700px;
-  max-width: 100%;
+  max-width: 100%;*/
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -16,6 +19,7 @@ html, body {
   margin: 100;
   padding: 100;
 }
+
 #floating-panel {
   position: left;
   top: 10px;
@@ -28,7 +32,8 @@ html, body {
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
-  width: 320px;
+  /*width: 320px;*/
+  width: 90%;
 }
 
 #submit {
