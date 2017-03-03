@@ -24,32 +24,29 @@
 		<div class="container">
 			<!-- Allow you to toggle between different content on the home screen -->
 			<ul class="tab">
-		  		<li><a class="tabA" id="Tab_PastProject">Past Highlights</a></li>
-		  		<li><a class="tabA" id="Tab_Trending">Trending Now</a></li>
+		  		<li><a class="tabA tablinks" id="Tab_PastProject">Past Highlights</a></li>
+		  		<li><a class="tabA tablinks" id="Tab_Trending">Trending Now</a></li>
 			</ul>
 		</div>
 
 		<!-- Add the sample projects here -->
 		<div id="PastProject" class="tabcontent">
 		{{#each highlightProjects}}
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-7" align="right">
-						<img src="{{imageURL}}" class="img-responsive img-rounded">				
-					</div>
-					<div class="col-xs-5">
-						<h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
-						<p class="projectShortDesc">{{shortDescription}}</p>
-					</div>
+			<div class="row">
+				<div class="col-xs-7" align="right">
+					<img src="{{imageURL}}" class="img-responsive img-rounded">	
 				</div>
-				<p style="margin-bottom:40px;"/></p>
+				<div class="col-xs-5">
+					<h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
+					<p class="projectShortDesc">{{shortDescription}}</p>
+				</div>
 			</div>
+			<p style="margin-bottom:40px;"/></p>
 		{{/each}}
 		</div>
 
 		<div id="Trending" class="tabcontent">
 		{{#each trendingProjects}}
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-7" align="right">
 					<img src="{{imageURL}}" class="img-responsive img-rounded">				
@@ -60,7 +57,6 @@
 				</div>
 			</div>
 			<p style="margin-bottom:40px;"/></p>
-		</div>
 		{{/each}}
 		</div>
 
@@ -77,23 +73,20 @@
 		<!-- Add the sample projects here -->
 		<div id="PastProject" class="tabcontent">
 		{{#each highlightProjects}}
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-5" align="left">
-						<img src="{{imageURL}}" class="img-responsive img-rounded">	
-						<h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
-						<p class="projectShortDesc">{{shortDescription}}</p>
-					</div>
-					
+			<div class="row">
+				<div class="col-md-5" align="left">
+					<img src="{{imageURL}}" class="img-responsive img-rounded">	
+					<h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
+					<p class="projectShortDesc">{{shortDescription}}</p>
 				</div>
-				<p style="margin-bottom:40px;"/></p>
+				
 			</div>
+			<p style="margin-bottom:40px;"/></p>
 		{{/each}}
 		</div>
 
 		<div id="Trending" class="tabcontent">
 		{{#each trendingProjects}}
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-5" align="left">
 					<img src="{{imageURL}}" class="img-responsive img-rounded">		
@@ -109,7 +102,6 @@
 				</div>
 			</div>
 			<p style="margin-bottom:40px;"/></p>
-		</div>
 		{{/each}}
 		</div>
 	{{/if}}
