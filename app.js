@@ -50,6 +50,7 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/project/highlights/:id', project.viewHighlights);
 app.get('/project/trending/:id', project.viewTrending);
+app.get('/project/create/:id', project.viewNewProject);
 app.get('/project/new', project.viewNewProject);
 app.get('/discover', discover.view);
 app.get('/create', create.view);
