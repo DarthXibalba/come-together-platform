@@ -16,5 +16,5 @@ exports.viewA = function(req, res){
 exports.viewB = function(req, res){
 	console.log("Rendering Home B");
 	projectData['versionA'] = false;
-	res.render('home', projectData);
+	res.render('home_B', projectData);
 };
