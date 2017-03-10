@@ -47,8 +47,10 @@ h3 {
 
 /* Manipulate the login box */
 .login-custom {
-  border-radius: 25px;
+  /*border-radius: 25px;*/
   /*background: #73AD21;*/
   padding: 20px;
-  width: 400px;
+  margin-right: 40px;
+  margin-left: 40px;
+  /*width: 400px;*/
 }
