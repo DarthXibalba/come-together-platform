@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Home Page -->
+<html>
+<head>
+	<title>Come Together</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- import custom CSS modules -->
+	<link href="/css/comeTogether.css" rel="stylesheet">
+	<link href="/css/textFonts.css" rel="stylesheet">
+	<link href="/css/home.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- load header -->
+	<div id="header"></div>
+
+	<!-- Home Version B -->
+	<div class="container">
+		<!-- Allow you to toggle between different content on the home screen -->
+		<ul class="tab">
+			<li><a class="tabB tablinks" id="Tab_Trending">Trending Now</a></li>
+	  		<li><a class="tabB tablinks" id="Tab_PastProject">Past Highlights</a></li>
+		</ul>
+	</div>
+
+	<!-- Add the sample projects here -->
+	<div id="PastProject" class="tabcontent">
+	{{#each highlightProjects}}
+		<div class="row">
+			<div class="col-md-5" align="left">
+				<img src="{{imageURL}}" class="img-responsive img-rounded">	
+				<h4><a href="/project/highlights/{{id}}" class="projectName">{{name}}</a></h4>
+				<p class="projectShortDesc">{{shortDescription}}</p>
+			</div>
+			
+		</div>
+		<p style="margin-bottom:40px;"/></p>
+	{{/each}}
+	</div>
+
+	<div id="Trending" class="tabcontent">
+	{{#each trendingProjects}}
+		<div class="row">
+			<div class="col-md-5" align="left">
+				<img src="{{imageURL}}" class="img-responsive img-rounded">		
+				<h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
+				<p class="projectShortDesc">{{shortDescription}}</p>		
+					<h4>Participation</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+							aria-valuemin="0" aria-valuemax="100" style="width:40%">
+						40%
+						</div>
+					</div>	
+			</div>
+		</div>
+		<p style="margin-bottom:40px;"/></p>
+	{{/each}}
+	</div>
+
+	<!-- load footer -->
+	<div id="footer"></div>
+
+	<!-- load JS scripts -->
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/comeTogether.js"></script>
+
+	{{#if versionA}}
+		<script> document.getElementById("Tab_PastProject").click();</script>
+	{{else}}
+		<script> document.getElementById("Tab_Trending").click();</script>
+	{{/if}}
+
+	<!-- load header and footer using scripts-->
+	<script> $(function() {$("#header").load("/header.html")} ); </script>
+	<script> $(function() {$("#footer").load("/footer.html")} ); </script>
+</body>
+</html>
