@@ -47,44 +47,39 @@
 
   <!-- Need some variable in data.json that show/hide projects that the user has joined. Currently shows all highlights and past projects of the data file.-->
   <div id="UserProjects" class="tabcontent">
-
-  <h4>Current Projects</h4>
-  {{#each newProjects}}
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-7" align="right">
-        <img src="{{imageURL}}" class="img-responsive img-rounded">       
-      </div>
-      <div class="col-xs-5">
-        <h4><a href="/project/create/{{id}}" class="projectName">{{name}}</a></h4>
-        <p class="projectShortDesc">{{shortDescription}}</p>
-      </div>
-    </div>
-    <p style="margin-bottom:40px;"/></p>
-  </div>
-  {{/each}}
-
-
-  <h4>Past Projects</h4>
-  {{#each oldProjects}}
+    <h4>Current Projects</h4>
+    {{#each newProjects}}
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-7" align="right">
           <img src="{{imageURL}}" class="img-responsive img-rounded">       
         </div>
         <div class="col-xs-5">
-          <h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
+          <h4><a href="/project/create/{{id}}" class="projectName">{{name}}</a></h4>
           <p class="projectShortDesc">{{shortDescription}}</p>
         </div>
       </div>
       <p style="margin-bottom:40px;"/></p>
     </div>
-  {{/each}}
+    {{/each}}
 
 
+    <h4>Past Projects</h4>
+    {{#each oldProjects}}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-7" align="right">
+            <img src="{{imageURL}}" class="img-responsive img-rounded">       
+          </div>
+          <div class="col-xs-5">
+            <h4><a href="/project/trending/{{id}}" class="projectName">{{name}}</a></h4>
+            <p class="projectShortDesc">{{shortDescription}}</p>
+          </div>
+        </div>
+        <p style="margin-bottom:40px;"/></p>
+      </div>
+    {{/each}}
   </div>  
-
-
 
   <!-- load footer -->
   <div id="footer"></div>
