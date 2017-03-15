@@ -22,17 +22,21 @@
 	<!-- Home Version B -->
 	<div class="container">
 		<!-- Allow you to toggle between different content on the home screen -->
-		<ul class="tab">
+		<!--ul class="tab">
 			<li><a class="tabB tablinks" id="Tab_Trending">Trending Now</a></li>
 	  		<li><a class="tabB tablinks" id="Tab_PastProject">Past Highlights</a></li>
-		</ul>
+		</ul-->
+		<div class="tab">
+			<button class="tablinks" id="Tab_Trending">Trending Now</button>
+			<button class="tablinks" id="Tab_PastProject">Past Highlights</button>
+		</div>
 	</div>
 
 	<!-- Add the sample projects here -->
 	<div id="PastProject" class="tabcontent">
 	{{#each highlightProjects}}
 		<div class="row">
-			<div class="col-md-5" align="left">
+			<div class="col-xs-12" align="left">
 				<img src="{{imageURL}}" class="img-responsive img-rounded">	
 				<h4><a href="/project/highlights/{{id}}">{{name}}</a></h4>
 				<p>{{shortDescription}}</p>
@@ -45,7 +49,7 @@
 	<div id="Trending" class="tabcontent">
 	{{#each trendingProjects}}
 		<div class="row">
-			<div class="col-md-5" align="left">
+			<div class="col-xs-12" align="left">
 				<img src="{{imageURL}}" class="img-responsive img-rounded">
 				<h4><a href="/project/trending/{{id}}">{{name}}</a></h4>
 				<p>{{shortDescription}}</p>
