@@ -2,30 +2,7 @@
  * CSS module used for the changing Home page format. 
  */
 
-/***** Josh's Tab Code *****/
-/* Style the list */
-/*
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-*/
-/* Style the links inside the list items */
-/*
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-*/
-/***** END *****/
+
 /* Style the tab */
 div.tab {
     float: left;
@@ -42,12 +19,11 @@ div.tab button {
     color: black;
     padding: 22px 16px;
     width: 100%;
+    height: 64px;
     border: none;
     outline: none;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -62,7 +38,25 @@ div.tab button.active {
 
 
 
+/***** Josh's Tab Code *****/
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
 
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
 /* Home Version A */
 .tabA {
@@ -73,9 +67,6 @@ div.tab button.active {
 .tabB {
     padding: 14px 35px;
 }
-
-
-
 
 /* Change background color of links on hover */
 ul.tab li a:hover {background-color: lightblue;}

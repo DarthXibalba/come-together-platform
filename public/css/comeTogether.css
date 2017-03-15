@@ -7,6 +7,10 @@ body {
    background-color: #F0FEFF; 
 }
 
+.appColor {
+  color: #008000;
+}
+
 /***** CODE FROM ORIGINAL FORK *****/
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {

@@ -32,35 +32,41 @@
 		</div>
 	</div>
 
+	&nbsp;
+
 	<!-- Add the sample projects here -->
 	<div id="PastProject" class="tabcontent">
 	{{#each highlightProjects}}
-		<div class="row">
-			<div class="col-xs-12" align="left">
-				<img src="{{imageURL}}" class="img-responsive img-rounded">	
-				<h4><a href="/project/highlights/{{id}}">{{name}}</a></h4>
-				<p>{{shortDescription}}</p>
+		<a href="/project/highlights/{{id}}">
+			<div class="row">
+				<div class="col-xs-12" align="left">
+					<img src="{{imageURL}}" class="img-responsive img-rounded">	
+					<h4 class="appColor">{{name}}</h4>
+					<p style="color: black">{{shortDescription}}</p>
+				</div>
 			</div>
-		</div>
-		<p style="margin-bottom:40px;"/></p>
+		</a>
+		<p style="margin-bottom:50px;"/></p>
 	{{/each}}
 	</div>
 
 	<div id="Trending" class="tabcontent">
 	{{#each trendingProjects}}
-		<div class="row">
-			<div class="col-xs-12" align="left">
-				<img src="{{imageURL}}" class="img-responsive img-rounded">
-				<h4><a href="/project/trending/{{id}}">{{name}}</a></h4>
-				<p>{{shortDescription}}</p>
-				
-				<h4>Participation</h4>
-				<div class="progress">
-					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-						aria-valuemin="0" aria-valuemax="100" style="width:40%">40%</div>
-				</div>	
+		<a href="/project/trending/{{id}}">
+			<div class="row">
+				<div class="col-xs-12" align="left">
+					<img src="{{imageURL}}" class="img-responsive img-rounded">
+					<h4 class="appColor">{{name}}</h4>
+					<p style="color: black">{{shortDescription}}</p>
+					
+					<h5 style="color: black"><strong>Participation</strong></h5>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+							aria-valuemin="0" aria-valuemax="100" style="width:40%">40%</div>
+					</div>	
+				</div>
 			</div>
-		</div>
+		</a>
 		<p style="margin-bottom:40px;"/></p>
 	{{/each}}
 	</div>
