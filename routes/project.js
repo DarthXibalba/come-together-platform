@@ -20,6 +20,12 @@ exports.viewHighlights = function(req, res) {
 	var shortDesc = projectData['highlightProjects'][projID]['shortDescription'];
 	var desc = projectData['highlightProjects'][projID]['description'];
 	var status = projectData['highlightProjects'][projID]['status'];
+	var organizer = projectData['highlightProjects'][projID]['organizer'];
+	var contact = projectData['highlightProjects'][projID]['contactInfo'];
+	var progress = projectData['highlightProjects'][projID]['progressStatus'];
+	var peopleNeeded = projectData['highlightProjects'][projID]['peopleNeeded'];
+	var meetingTime = projectData['highlightProjects'][projID]['meetingTime'];
+	var meetingLocation = projectData['highlightProjects'][projID]['meetingLocation'];
 	
 	console.log("Status:", status);
 	if (status === "active") {
@@ -34,7 +40,13 @@ exports.viewHighlights = function(req, res) {
 		'projectImgUrl': imageURL,
 		'projectShortDesc': shortDesc,
 		'projectDesc': desc,
-		'showJoinBtn': showJoin
+		'showJoinBtn': showJoin,
+		'organizer': organizer,
+		'contact': contact,
+		'progress': progress,
+		'peopleNeeded': peopleNeeded,
+		'meetingTime': meetingTime,
+		'meetingLocation': meetingLocation
 	});
 };
 
@@ -49,6 +61,12 @@ exports.viewTrending = function(req, res) {
 	var shortDesc = projectData['trendingProjects'][projID]['shortDescription'];
 	var desc = projectData['trendingProjects'][projID]['description'];
 	var status = projectData['trendingProjects'][projID]['status'];
+	var organizer = projectData['trendingProjects'][projID]['organizer'];
+	var contact = projectData['trendingProjects'][projID]['contactInfo'];
+	var progress = projectData['trendingProjects'][projID]['progressStatus'];
+	var peopleNeeded = projectData['trendingProjects'][projID]['peopleNeeded'];
+	var meetingTime = projectData['trendingProjects'][projID]['meetingTime'];
+	var meetingLocation = projectData['trendingProjects'][projID]['meetingLocation'];
 	
 	console.log("Status:", status);
 	if (status === "active") {
@@ -64,7 +82,13 @@ exports.viewTrending = function(req, res) {
 		'projectImgUrl': imageURL,
 		'projectShortDesc': shortDesc,
 		'projectDesc': desc,
-		'showJoinBtn': showJoin
+		'showJoinBtn': showJoin,
+		'organizer': organizer,
+		'contact': contact,
+		'progress': progress,
+		'peopleNeeded': peopleNeeded,
+		'meetingTime': meetingTime,
+		'meetingLocation': meetingLocation
 	});
 };
 
