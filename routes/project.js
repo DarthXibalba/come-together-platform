@@ -34,6 +34,8 @@ exports.viewHighlights = function(req, res) {
 	else {
 		showJoin = false;
 	}
+	// Add a valid variable so that the extra details are displayed for Highlights/Trending but not Create
+	validProj = true;
 
 	res.render('project', {
 		'projectName': name,
@@ -46,7 +48,8 @@ exports.viewHighlights = function(req, res) {
 		'progress': progress,
 		'peopleNeeded': peopleNeeded,
 		'meetingTime': meetingTime,
-		'meetingLocation': meetingLocation
+		'meetingLocation': meetingLocation,
+		'validProj': validProj
 	});
 };
 
@@ -75,6 +78,8 @@ exports.viewTrending = function(req, res) {
 	else {
 		showJoin = false;
 	}
+	// Add a valid variable so that the extra details are displayed for Highlights/Trending but not Create
+	validProj = true;
 
 
 	res.render('project', {
@@ -88,7 +93,8 @@ exports.viewTrending = function(req, res) {
 		'progress': progress,
 		'peopleNeeded': peopleNeeded,
 		'meetingTime': meetingTime,
-		'meetingLocation': meetingLocation
+		'meetingLocation': meetingLocation,
+		'validProj': validProj
 	});
 };
 

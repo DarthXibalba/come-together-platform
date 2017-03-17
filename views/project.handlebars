@@ -24,21 +24,29 @@
 			&nbsp;
 			<img src="{{projectImgUrl}}" class="img-responsive img-rounded">
 			<p style="margin-bottom:20px;"/></p>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}">{{progress}}</div>
-			</div>
-			<p style="margin-bottom:20px;"/></p>
+			
+			{{#if validProj}}
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}">{{progress}}</div>
+				</div>
+				<p style="margin-bottom:20px;"/></p>
+			{{/if}}
+
 			<p class="projectDesc">{{projectDesc}}</p>
 			&nbsp;
-			<h4><strong>Organizer:</strong></h4><p>{{organizer}}</p>
-			&nbsp;
-			<h4><strong>Contact:</strong></h4><p>{{contact}}</p>
-			&nbsp;
-			<h4><strong>Types of People Needed:</strong></h4><p>{{peopleNeeded}}</p>
-			&nbsp;
-			<h4><strong>Meeting Time:</strong></h4><p>{{meetingTime}}</p>
-			&nbsp;
-			<h4><strong>Meeting Location:</strong></h4><p>{{meetingLocation}}</p>
+
+			{{#if validProj}}
+				<h4><strong>Organizer:</strong></h4><p>{{organizer}}</p>
+				&nbsp;
+				<h4><strong>Contact:</strong></h4><p>{{contact}}</p>
+				&nbsp;
+				<h4><strong>Types of People Needed:</strong></h4><p>{{peopleNeeded}}</p>
+				&nbsp;
+				<h4><strong>Meeting Time:</strong></h4><p>{{meetingTime}}</p>
+				&nbsp;
+				<h4><strong>Meeting Location:</strong></h4><p>{{meetingLocation}}</p>
+			{{/if}}
+
 			<hr>
 		</div>
 
