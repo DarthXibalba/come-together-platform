@@ -27,11 +27,12 @@
       <div id="map" class="iframe-container container"></div>
       <!-- List of Projects -->
       <div class="container">
-        <h4 style="margin-top: 20px">Trending Now</h4>
+        &nbsp;
+        <h4 style="margin-top: 20px"><strong>Trending Now</strong></h4>
         <ul class="list-group">
           {{#each trendingProjects}}
             <li class="list-group-item">
-              <a href="/project/trending/{{id}}" class="standardText">{{name}}</a><span class="badge">40%</span>
+              <a href="/project/trending/{{id}}" class="standardText appColor">{{name}}</a><span class="badge">{{progressStatus}}</span>
             </li>
           {{/each}}
         </ul>
