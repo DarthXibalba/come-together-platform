@@ -41,19 +41,22 @@
 
   <!-- user's about me page -->
   <div id="UserAbout" class="tabcontent">
-    <h4>Biography</h4>
+    <h4><strong>Biography</strong></h4>
     <p>Cat lover, expert in gardening, and all around community service enthusiast.</p>
-    <h4>Location</h4>
+    &nbsp;
+    <h4><strong>Location</strong></h4>
     <p>La Jolla, CA.</p>
-    <h4>Websites</h4>
+    &nbsp;
+    <h4><strong>Websites</strong></h4>
     <a href="https://www.facebook.com"><p>facebook.com/joesmith</p></a>
+    &nbsp;
   </div>
 
   <!-- ***user's current/past projects *** -->
 
   <!-- Need some variable in data.json that show/hide projects that the user has joined. Currently shows all highlights and past projects of the data file.-->
   <div id="UserProjects" class="tabcontent">
-    <h4>Current Projects</h4>
+    <h4><strong>Current Projects</strong></h4>
     {{#each newProjects}}
     <div class="container-fluid">
       <div class="row">
@@ -70,7 +73,7 @@
     {{/each}}
 
 
-    <h4>Past Projects</h4>
+    <h4><strong>Past Projects</strong></h4>
     {{#each oldProjects}}
       <div class="container-fluid">
         <div class="row">

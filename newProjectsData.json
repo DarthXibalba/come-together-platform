@@ -1,32 +1,50 @@
 {
 	"newProjects": [
-		{
-			"id": "0",
-			"name": "TEST - Geometry Playground",
-			"imageURL": "/images/highlights_parkPlayground.jpg",
-			"shortDescription": "Combining math and playtime to help kids learn more about math.",
-			"description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly.",
-		  "status" : "active"
+    {
+      "id": "2",
+      "name": "Sparkling Clean Beach",
+      "imageURL": "/images/trending_beach.jpg",
+      "shortDescription": "Clearing up the city beach to help the local wildlife.",
+      "description": "As an animal rights activist and environmental engineer, my whole life has been dedicated towards protecting the beautiful wildlife that lives around us. Recently, an accident with an oil tanker has contaminated the waters of a beach next to the freeway, and the animal life is suddenly in great danger. Please consider saving the wildlife at the beach and keeping our environment healthy and clean!",
+      "status": "active",
+      "organizer": "Cliff Redford",
+      "contactInfo": "602-796-0375",
+      "progressStatus": "61%",
+      "peopleNeeded": "Community members with the heart to help save our local ecosystem.",
+      "meetingTime": "Saturdays @ 7:00AM",
+      "meetingLocation": "Viviana Beach"
     }
 	],
 
   "oldProjects": [
     {
-      "id": "1",
-      "name": "Pothole Repair Service",
-      "imageURL": "/images/trending_fixPotholes.jpg",
-      "shortDescription": "Fixing up potholes in local streets.",
-      "description": "Like most people in my area, I love my hometown. It's the city I grew up in and where I created cherishable memories with friends and family. What saddened me over the years was seeing it degrade in quality, especially the local roads. When my car hit what was probably the one-thousandth pothole that week, I said that enough is enough; someone needs to fix up our roads. Join me in creating a company that is geared towards taking care of these pesky roadside obstacles.",
-      "status" : "active"
+      "id": "0",
+      "name": "Geometry Playground",
+      "imageURL": "/images/highlights_parkPlayground.jpg",
+      "shortDescription": "Combining math and playtime to help kids learn more about math.",
+      "description": "In school, children often struggle with geometry. As a concerned mother, I decided to help my children learn geometry better by playing games with them. Eventually, my husband made them a slide made out of hexagons, and we would test them on how to find the interior angles, the different sides if they were chopped up into different shapes, etc. When our children began to tackle their assignments with more enthusiasm, we decided that this could help other children. Thanks to Come Together, and our great community, we were able to crowd-source enough team mates and funds so that a playground based around a geometry theme could be built on an abandoned lot next to a neighbor's home. Our family and everyone else's are just amazed at how coming together to help our children has enriched their lives greatly.",
+      "status": "completed",
+      "organizer": "Mia Rodriguez",
+      "contactInfo": "619-781-5378",
+      "progressStatus": "100%",
+      "peopleNeeded": "People experienced in construction, anyone who knows the law, and anyone in the community who is interested!",
+      "meetingTime": "Wednesdays @ 8:30PM",
+      "meetingLocation": "Zambetta Community Center"
     },
 
     {
-      "id": "4",
-      "name": "Tutoring Refugee Children",
-      "imageURL": "/images/trending_refugee.jpg",
-      "shortDescription": "Helping refugee children to integrate into the community better through help with language.",
-      "description": "With the ongoing refugee crisis, more and more children are dropped into an unsympathetic school system that does not care about their needs. While these children are in danger of falling behind if they cannot catch up with the curriculum, there is a way to prevent them from failing. Please consider joining a local team of community members as we help these students improve upon their language and mathematical skills so that they can stride toward a brighter future.",
-      "status": "active"
+      "id": "1",
+      "name": "Zensation",
+      "imageURL": "/images/highlights_japaneseGarden.jpg",
+      "shortDescription": "Providing serenity and peace of mind in a backyard garden.",
+      "description": "Years ago, I traveled to China and studied Zen Buddhism in a small temple. The experience taught me so much that when I decided to come back to the States, I vowed to spread the teachings I had been enlightened by. As a small way of doing so, I went on Come Together and asked my neighbors to help me convert my backyard into a full Zen garden, \"Zensation\". Once interested members joined my team, we came up with a great plan and managed to accrue enough money to execute construction. Within a few months, Zensation was completed and was opened to the community. Everyone is now much more healthy and joyful thanks to the capabilities of Come Together!",
+      "status": "completed",
+      "organizer": "Zenyatta Harkinson",
+      "contactInfo": "619-882-4396",
+      "progressStatus": "100%",
+      "peopleNeeded": "Garden Designers, Landscape Architects, and any interested parties.",
+      "meetingTime": "Mondays @ 7:00PM",
+      "meetingLocation": "Please call the number for the address"
     }
   ]
 
