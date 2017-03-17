@@ -13,8 +13,8 @@ var trendingColor = "#008000";
 /* Initialize GMaps in Discover */
 function initMap(event) {
 	map = new google.maps.Map(document.getElementById('map'), {
-	  zoom: 11,
-	  center: {lat: 32.88, lng: -117.24}
+	  zoom: 10,
+	  center: {lat: 32.75, lng: -117.15}
 	});
 
 	/* PLEASE FORGIVE MY HARDCODING, THERE'S NOT ENOUGH TIME */
