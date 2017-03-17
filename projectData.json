@@ -12,7 +12,10 @@
 			"progressStatus": "100%",
 			"peopleNeeded": "People experienced in construction, anyone who knows the law, and anyone in the community who is interested!",
 			"meetingTime": "Wednesdays @ 8:30PM",
-			"meetingLocation": "Zambetta Community Center"
+			"meetingLocation": "Zambetta Community Center",
+			"lat": "32.877358",
+			"long": "-117.211757",
+			"radius": "800"
 		},
 		{
 			"id": "1",
@@ -26,7 +29,10 @@
 			"progressStatus": "100%",
 			"peopleNeeded": "Garden Designers, Landscape Architects, and any interested parties.",
 			"meetingTime": "Mondays @ 7:00PM",
-			"meetingLocation": "Please call the number for the address"
+			"meetingLocation": "Please call the number for the address",
+			"lat": "32.792474",
+			"long": "-117.078431",
+			"radius": "800"
 		},
 		{
 			"id": "2",
@@ -40,7 +46,10 @@
 			"progressStatus": "100%",
 			"peopleNeeded": "Computer Programmers, anyone tech-savvy, and concerned pet owners!!!",
 			"meetingTime": "Thursdays @ 7:20PM",
-			"meetingLocation": "Robertson & Lee Pet Kennel"
+			"meetingLocation": "Robertson & Lee Pet Kennel",
+			"lat": "32.742591",
+			"long": "-117.001457",
+			"radius": "6000"
 		},
 		{
 			"id": "3",
@@ -54,7 +63,10 @@
 			"progressStatus": "100%",
 			"peopleNeeded": "Teachers, Tutors, Parents, and anyone who is knowledgeable in any number of fields. Degrees not necessary!",
 			"meetingTime": "Fridays @ 6:00PM",
-			"meetingLocation": "Mangleranne Elementary School (room 274)"
+			"meetingLocation": "Mangleranne Elementary School (room 274)",
+			"lat": "32.740608",
+			"long": "-117.027370",
+			"radius": "12200"
 		},
 		{
 			"id": "4",
@@ -68,7 +80,10 @@
 			"progressStatus": "100%",
 			"peopleNeeded": "Donors to help with funding instruments, local warehouse owners for practice spaces. And any amount is appreciated!",
 			"meetingTime": "Tuesdays and Thursdays @ 3:30PM",
-			"meetingLocation": "Jefferson Middle School"
+			"meetingLocation": "Jefferson Middle School",
+			"lat": "32.947493",
+			"long": "-117.225382",
+			"radius": "4000"
 		}
 	],
 
@@ -85,7 +100,10 @@
 			"progressStatus": "58%",
 			"peopleNeeded": "Construction experts, urban designers, anyone who believes in a safer freeway.",
 			"meetingTime": "Sundays @ 4:00PM",
-			"meetingLocation": "Please message me on facebook or email me for the meeting location."
+			"meetingLocation": "Please message me on facebook or email me for the meeting location.",
+			"lat": "32.723953",
+			"long": "-117.161584",
+			"radius": "12500"
 		},
 		{
 			"id": "1",
@@ -99,7 +117,10 @@
 			"progressStatus": "33%",
 			"peopleNeeded": "Strong men willing to do some heavy lifting and construction, anyone skilled in business and entrepreneurship.",
 			"meetingTime": "Mondays and Thursdays @ 6:45PM",
-			"meetingLocation": "Manuella Public Library, Conference Room 8"
+			"meetingLocation": "Manuella Public Library, Conference Room 8",
+			"lat": "32.708499",
+			"long": "-117.152743",
+			"radius": "8000"
 		},
 		{
 			"id": "2",
@@ -113,7 +134,10 @@
 			"progressStatus": "61%",
 			"peopleNeeded": "Community members with the heart to help save our local ecosystem.",
 			"meetingTime": "Saturdays @ 7:00AM",
-			"meetingLocation": "Viviana Beach"
+			"meetingLocation": "Viviana Beach",
+			"lat": "32.634972",
+			"long": "-117.136350",
+			"radius": "4200"
 		},
 		{
 			"id": "3",
@@ -127,7 +151,10 @@
 			"progressStatus": "90%",
 			"peopleNeeded": "Volunteers who are willing to take some time out of their day to communicate with the elderly, and anyone who can donate.",
 			"meetingTime": "Please send letters by drop-off or mail no later than Thursdays@5pm.",
-			"meetingLocation": "Hellen St. John Elderly Care Home"
+			"meetingLocation": "Hellen St. John Elderly Care Home",
+			"lat": "32.838390",
+			"long": "-117.008151",
+			"radius": "6400"
 		},
 		{
 			"id": "4",
@@ -141,7 +168,10 @@
 			"progressStatus": "87%",
 			"peopleNeeded": "Local community members willing to spare some time to tutor refugee students after school.",
 			"meetingTime": "Wednesdays @ 4:00pm",
-			"meetingLocation": "Renaldo High School"
+			"meetingLocation": "Renaldo High School",
+			"lat": "32.910750",
+			"long": "-117.139983",
+			"radius": "4800"
 		}
 	],
 
